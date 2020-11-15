@@ -1,0 +1,39 @@
+{
+  "name": "go-webview-react",
+  "version": "0.0.1",
+  "description": "An example of using Golang/Webview/React to build desktop apps",
+  "scripts": {
+    "debug": "npm run debug:fe & npm run debug:be",
+    "debug:fe": "webpack serve --mode development",
+    "debug:be": "go run . -d",
+    "build": "npm run build:fe & npm run build:be",
+    "build:fe": "webpack --mode production",
+    "build:be": "go build -o dist/bin/webview ."
+  },
+  "author": "Ahmed M Kamal <en.ahmed.mk@gmail.com> (https://ahmedmkamal.com)",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^14.14.7",
+    "@types/react": "^16.9.56",
+    "@types/react-dom": "^16.9.9",
+    "html-webpack-plugin": "^4.5.0",
+    "no-emit-webpack-plugin": "^2.0.1",
+    "react": "^17.0.1",
+    "react-dev-utils": "^11.0.0",
+    "react-dom": "^17.0.1",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.0.5",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "keywords": [
+    "go",
+    "golang",
+    "webview",
+    "desktop",
+    "react",
+    "typescript",
+    "webpack"
+  ]
+}

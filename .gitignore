@@ -1,0 +1,10 @@
+# bin/dist
+dist
+
+# dev-only dirs
+vendor
+node_modules
+
+# IDEs
+.idea
+.vscode
